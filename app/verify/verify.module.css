@@ -1,0 +1,104 @@
+.container {
+  width: 100%;
+  max-width: 800px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 48px 32px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.veriffContainer {
+  margin-top: 32px;
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.veriffIframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+.loading {
+  text-align: center;
+  padding: 48px 0;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #667eea;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 24px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error {
+  text-align: center;
+  padding: 32px 0;
+}
+
+.errorMessage {
+  color: #e74c3c;
+  font-size: 16px;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #fee;
+  border-radius: 8px;
+}
+
+.retryButton,
+.backButton {
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  margin: 8px;
+  transition: transform 0.2s;
+}
+
+.retryButton {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.backButton {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.retryButton:hover,
+.backButton:hover {
+  transform: translateY(-2px);
+}
